@@ -10,7 +10,7 @@
                     </div>
                     <div class="row m-t-12">
                         <li type="none" class="mr-1 ml-2 fs-13 text-white">
-                            <i class="fa fa-calendar-check mr-1" style="color:#2979FF"></i>
+                            <i class="icon icon-calendar-check-o"></i>
                             <a id="hari"></a>
                             ,
                             <a id="tanggal"></a>
@@ -32,7 +32,7 @@
                 <ul class="nav navbar-nav">
                     <li class="dropdown custom-dropdown user user-menu ">
                         <a href="{{ route('blank-page') }}" class="nav-link" data-toggle="dropdown">
-                            <img src="{{ asset('images/boy.png') }}" class="user-image fotoLink" alt="User Image">
+                            <img src="{{ asset('images/boy.png') }}" class="user-image user_avatar" alt="User Image">
                             <i class="icon-more_vert "></i>
                         </a>
                         <div class="dropdown-menu p-4 dropdown-menu-right" style="width:255px">

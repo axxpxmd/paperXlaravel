@@ -6,6 +6,13 @@
             <span>Dashboard</span>
         </a>
     </li>
+    <li class="header light"><strong>MASTER TEMPLATE</strong></li>
+    <li>
+        <a href="{{ route('blank-page') }}">
+            <i class="icon icon-settings2 green-text s-18"></i> 
+            <span>Config Template</span>
+        </a>
+    </li>
     @can('master-role')
     <li class="header light"><strong>MASTER ROLES</strong></li>
     <li>
