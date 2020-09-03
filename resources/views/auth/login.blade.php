@@ -1,3 +1,6 @@
+@php
+$template = App\Models\Template::select('id', 'logo', 'logo_title')->first();
+@endphp
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +10,7 @@
     <meta name="author" content="">
 
     <!-- Title -->
-    <link rel="icon" href="{{ asset('images/logo/paper-plane.png') }}" type="image/x-icon">
+    <link rel="icon" href="{{ asset('images/logo/'.$template->logo_title) }}" type="image/x-icon">
     <title>PAPER | Form Login</title>
 
     <!-- CSS -->
@@ -19,7 +22,7 @@
         <div class="d-flex row">
             <div class="col-md-3 white">
                 <div class="pl-5 pt-5 pr-5 mt-5 pb-0">
-                    <img src="{{ asset('images/logo/paper.png') }}" class="mx-auto d-block" width="150" alt=""/>
+                    <img src="{{ asset('images/logo/'.$template->logo) }}" class="mx-auto d-block" width="150" alt=""/>
                 </div>
                 <div class="p-5">
                     <h3>Selamat Datang</h3>
