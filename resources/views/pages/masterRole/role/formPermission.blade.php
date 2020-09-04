@@ -7,7 +7,7 @@
             <div class="row">
                 <div class="col">
                     <h4>
-                        <i class="icon icon-key4"></i>Show Role | {{ $role->name }}
+                        <i class="icon icon-key4 mr-2"></i>Show Role | {{ $role->name }}
                     </h4>
                 </div>
             </div>
