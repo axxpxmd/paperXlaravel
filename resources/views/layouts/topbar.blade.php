@@ -1,4 +1,4 @@
-<div class="has-sidebar-left ">
+<div class="has-sidebar-left">
     <div class="sticky">
         <div class="navbar navbar-expand navbar-dark d-flex justify-content-between bd-navbar blue accent-3">
             <div class="relative">
@@ -30,6 +30,103 @@
             </div>
             <div class="navbar-custom-menu">
                 <ul class="nav navbar-nav">
+                    <!-- Messages -->
+                    <li class="dropdown custom-dropdown messages-menu">
+                        <a href="#" class="nav-link" data-toggle="dropdown">
+                            <i class="icon-message "></i>
+                            <span class="badge badge-success badge-mini rounded-circle">4</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-right">
+                            <li>
+                                <ul class="menu pl-2 pr-2">
+                                    <li>
+                                        <a href="#">
+                                            <div class="avatar float-left">
+                                                <img src="assets/img/dummy/u4.png" alt="">
+                                                <span class="avatar-badge busy"></span>
+                                            </div>
+                                            <h4>
+                                                Support Team
+                                                <small><i class="icon icon-clock-o"></i> 5 mins</small>
+                                            </h4>
+                                            <p>Why not buy a new awesome theme?</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="avatar float-left">
+                                                <img src="assets/img/dummy/u1.png" alt="">
+                                                <span class="avatar-badge online"></span>
+                                            </div>
+                                            <h4>
+                                                Support Team
+                                                <small><i class="icon icon-clock-o"></i> 5 mins</small>
+                                            </h4>
+                                            <p>Why not buy a new awesome theme?</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="avatar float-left">
+                                                <img src="assets/img/dummy/u2.png" alt="">
+                                                <span class="avatar-badge idle"></span>
+                                            </div>
+                                            <h4>
+                                                Support Team
+                                                <small><i class="icon icon-clock-o"></i> 5 mins</small>
+                                            </h4>
+                                            <p>Why not buy a new awesome theme?</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="avatar float-left">
+                                                <img src="assets/img/dummy/u3.png" alt="">
+                                                <span class="avatar-badge busy"></span>
+                                            </div>
+                                            <h4>
+                                                Support Team
+                                                <small><i class="icon icon-clock-o"></i> 5 mins</small>
+                                            </h4>
+                                            <p>Why not buy a new awesome theme?</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="footer s-12 p-2 text-center"><a href="#">See All Messages</a></li>
+                        </ul>
+                    </li>
+                    <!-- Notifications -->
+                    <li class="dropdown custom-dropdown notifications-menu">
+                        <a href="#" class=" nav-link" data-toggle="dropdown" aria-expanded="false">
+                            <i class="icon-notifications "></i>
+                            <span class="badge badge-danger badge-mini rounded-circle">4</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-right">
+                            <li class="header">You have 10 notifications</li>
+                            <li>
+                                <ul class="menu">
+                                    <li>
+                                        <a href="#">
+                                            <i class="icon icon-data_usage text-success"></i> 5 new members joined today
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="icon icon-data_usage text-danger"></i> 5 new members joined today
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="icon icon-data_usage text-yellow"></i> 5 new members joined today
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="footer p-2 text-center"><a href="#">View all</a></li>
+                        </ul>
+                    </li>
+                    <!-- Profile -->
                     <li class="dropdown custom-dropdown user user-menu ">
                         <a href="{{ route('blank-page') }}" class="nav-link" data-toggle="dropdown">
                             <img src="{{ asset('images/boy.png') }}" class="user-image user_avatar" alt="User Image">
