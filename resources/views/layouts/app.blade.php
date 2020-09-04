@@ -41,7 +41,7 @@ $template = App\Models\Template::select('id', 'logo', 'logo_title')->first();
                 <div class="user-panel p-3 light mb-2">
                     <div>
                         <div class="float-left image">
-                            <img class="user_avatar" src="{{ asset('images/boy.png') }}" alt="User Image">
+                            <img class="user_avatar" src="{{ asset('images/ava/' . Auth::user()->admin_detail[0]->foto) }}" alt="User Image">
                         </div>
                         <div class="float-left info">
                             <h6 class="font-weight-light mb-1">{{ Auth::user()->username }}</h6>

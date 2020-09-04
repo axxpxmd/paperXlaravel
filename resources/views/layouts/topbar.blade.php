@@ -129,7 +129,7 @@
                     <!-- Profile -->
                     <li class="dropdown custom-dropdown user user-menu ">
                         <a href="{{ route('blank-page') }}" class="nav-link" data-toggle="dropdown">
-                            <img src="{{ asset('images/boy.png') }}" class="user-image user_avatar" alt="User Image">
+                            <img src="{{ asset('images/ava/' . Auth::user()->admin_detail[0]->foto) }}" class="user-image user_avatar">
                             <i class="icon-more_vert "></i>
                         </a>
                         <div class="dropdown-menu p-4 dropdown-menu-right" style="width:255px">

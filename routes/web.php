@@ -41,9 +41,9 @@ Route::group(['middleware' => ['auth']], function () {
         Route::resource('permission', 'PermissionController');
         Route::post('permission/api', 'PermissionController@api')->name('permission.api');
         // Pegawai
-        Route::resource('pengguna', 'PegawaiController');
-        // Route::post('pegawai/api', 'PegawaiController@api')->name('pegawai.api');
-        // Route::get('pegawai/{id}/editPassword', 'PegawaiController@editPassword')->name('pegawai.editPassword');
-        // Route::post('pegawai/{id}/updatePassword', 'PegawaiController@updatePassword')->name('pegawai.updatePassword');
+        Route::resource('pengguna', 'PenggunaController');
+        Route::post('pengguna/api', 'PenggunaController@api')->name('pengguna.api');
+        Route::get('pengguna/{id}/editPassword', 'PenggunaController@editPassword')->name('pengguna.editPassword');
+        Route::post('pengguna/{id}/updatePassword', 'PenggunaController@updatePassword')->name('pengguna.updatePassword');
     });
 });
