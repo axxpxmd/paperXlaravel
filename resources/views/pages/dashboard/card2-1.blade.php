@@ -19,7 +19,25 @@
             <div class="tab-pane animated fadeInRightShort show active" id="v-pills-w1-tab1" role="tabpanel" aria-labelledby="v-pills-w1-tab1">
                 <div class="row p-3">
                     <div class="col-md-6">
-                        <div class="jvmap" data-options='{"map":"usa_en","backgroundColor":null,"color":"#4285f4","hoverOpacity":0.7,"selectedColor":"#36a2eb","enableZoom":true,"showTooltip":true,"values":"sample_data","scaleColors":["#E6F2F0","#149B7E"],"normalizeFunction":"polynomial"}' style="height:300px;"></div>
+                        <div class="">
+                            <div style="height: 328px">
+                                <canvas data-chart="chartJs"
+                                        data-chart-type="pie"
+                                        data-dataset="[[75, 50], [25, 50]]"
+                                        data-labels="[['Disk'],['Database']]"
+                                        data-dataset-options="[
+                                            {
+                                                label: 'Disk',
+                                                backgroundColor: ['#4285F4', '#7DC855']
+                                            },
+                                            {
+                                                label: 'Database',
+                                                backgroundColor: ['#FFEB3B', '#36A2EB']
+                                            },
+                                        ]">
+                                </canvas>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-md-6">
                         <div class="card-body pt-0">
