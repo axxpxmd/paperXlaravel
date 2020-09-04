@@ -23,4 +23,24 @@ Route::group(['middleware' => ['auth']], function () {
      * Page Not Found
      */
     Route::get('blank-page', 'BlankPageController@index')->name('blank-page');
+
+    Route::prefix('master-roles')->namespace('MasterRole')->name('master-role.')->group(function () {
+        // Role
+        Route::resource('role', 'RoleController');
+        // Route::prefix('role')->name('role.')->group(function () {
+        //     Route::post('api', 'RoleController@api')->name('api');
+        //     Route::get('{id}/addPermissions', 'RoleController@permission')->name('addPermissions');
+        //     Route::post('storePermissions', 'RoleController@storePermission')->name('storePermissions');
+        //     Route::get('{id}/getPermissions', 'RoleController@getPermissions')->name('getPermissions');
+        //     Route::delete('{name}/destroyPermission', 'RoleController@destroyPermission')->name('destroyPermission');
+        // });
+        // Permission
+        Route::resource('permission', 'PermissionController');
+        Route::post('permission/api', 'PermissionController@api')->name('permission.api');
+        // Pegawai
+        Route::resource('pengguna', 'PegawaiController');
+        // Route::post('pegawai/api', 'PegawaiController@api')->name('pegawai.api');
+        // Route::get('pegawai/{id}/editPassword', 'PegawaiController@editPassword')->name('pegawai.editPassword');
+        // Route::post('pegawai/{id}/updatePassword', 'PegawaiController@updatePassword')->name('pegawai.updatePassword');
+    });
 });

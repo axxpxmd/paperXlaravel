@@ -13,7 +13,7 @@
             <span>Config Template</span>
         </a>
     </li>
-    @can('master-role')
+    {{-- @can('master-role') --}}
     <li class="header light"><strong>MASTER ROLES</strong></li>
     <li>
         <a href="{{ route('master-role.role.index') }}">
@@ -33,5 +33,5 @@
             <span>Pengguna</span>
         </a>
     </li>
-    @endcan
+    {{-- @endcan --}}
 </ul>
