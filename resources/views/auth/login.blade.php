@@ -1,5 +1,5 @@
 @php
-$template = App\Models\Template::select('id', 'logo', 'logo_title')->first();
+$template = App\Models\Template::select('id', 'logo', 'logo_title', 'logo_auth')->first();
 @endphp
 <!DOCTYPE html>
 <html lang="en">
@@ -26,7 +26,7 @@ $template = App\Models\Template::select('id', 'logo', 'logo_title')->first();
                 </div>
                 <div class="p-5">
                     <h3>Selamat Datang</h3>
-                    <p>Silahkan masukkan username dan password Anda.</p>
+                    <p>Silahkan masukan username dan password Anda.</p>
                     <form method="POST" action="{{ route('login') }}" autocomplete="off">
                         @csrf
                         <div class="form-group has-icon"><i class="icon icon-user"></i>
@@ -49,7 +49,7 @@ $template = App\Models\Template::select('id', 'logo', 'logo_title')->first();
                     </form>
                 </div>
             </div>
-            <div class="col-md-9 height-full blue accent-3 align-self-center text-center img-fluid img-responsive" data-bg-repeat="false" data-bg-possition="center" style="background: url('assets/img/icon/icon-plane.png') #FFEFE4">
+            <div class="col-md-9 height-full blue accent-3 align-self-center text-center img-fluid img-responsive" data-bg-repeat="false" data-bg-possition="center" style="background: url('images/logo/{{$template->logo_auth}}') #FFEFE4">
             </div>
         </div>
     </div>

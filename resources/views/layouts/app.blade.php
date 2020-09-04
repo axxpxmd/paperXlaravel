@@ -25,9 +25,6 @@ $template = App\Models\Template::select('id', 'logo', 'logo_title')->first();
     <link rel="stylesheet" href="{{ asset('assets/css/jquery-fancybox.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/buttons.dataTables.min.css') }}">
 
-    <!-- JS CDN tinyMCE5 -->
-    <script src="https://cdn.tiny.cloud/1/kmpjl2vq2hx8zh493a02m8sxahks3nt4inhuoqxbxn3i17bj/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
-
 </head>
 <body class="light">
 @include('layouts.preloader')
