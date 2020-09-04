@@ -46,4 +46,11 @@ Route::group(['middleware' => ['auth', 'role:super-admin']], function () {
         Route::get('pengguna/{id}/editPassword', 'PenggunaController@editPassword')->name('pengguna.editPassword');
         Route::post('pengguna/{id}/updatePassword', 'PenggunaController@updatePassword')->name('pengguna.updatePassword');
     });
+
+    /**
+     * Profil
+     */
+    Route::prefix('profile')->namespace('Profile')->name('profile.')->group(function () {
+        // Profile
+    });
 });

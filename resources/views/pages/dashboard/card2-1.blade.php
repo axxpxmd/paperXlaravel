@@ -44,10 +44,10 @@
                             <h6>Top Countries</h6>
                             <div class="my-3">
                                 <div class="float-right">
-                                    <a href="#" class="btn-fab btn-fab-sm btn-primary r-5">
+                                    <a href="{{ route('blank-page') }}" class="btn-fab btn-fab-sm btn-primary r-5">
                                         <i class="icon-mail-envelope-closed2 p-0"></i>
                                     </a>
-                                    <a href="#" class="btn-fab btn-fab-sm btn-success r-5">
+                                    <a href="{{ route('blank-page') }}" class="btn-fab btn-fab-sm btn-success r-5">
                                         <i class="icon-star p-0"></i>
                                     </a>
                                 </div>

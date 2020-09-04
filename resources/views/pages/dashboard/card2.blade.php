@@ -10,25 +10,25 @@
                     <div class="card-body">
                         <ul class="social">
                             <li>
-                                <a href="#" class="facebook mr-3">
+                                <a href="{{ route('blank-page') }}" class="facebook mr-3">
                                     <i class="icon-facebook"></i>
                                 </a> Facebook
                                 <span class="float-right mt-2 font-weight-bold">10%</span>
                             </li>
                             <li>
-                                <a href="#" class="youtube mr-3">
+                                <a href="{{ route('blank-page') }}" class="youtube mr-3">
                                     <i class="icon-youtube"></i>
                                 </a>Youtube
                                 <span class="float-right mt-2 font-weight-bold">20%</span>
                             </li>
                             <li>
-                                <a href="#" class="twitter mr-3">
+                                <a href="{{ route('blank-page') }}" class="twitter mr-3">
                                     <i class="icon-twitter"></i>
                                 </a>Twitter
                                 <span class="float-right mt-2 font-weight-bold">50%</span>
                             </li>
                             <li>
-                                <a href="#" class="instagram mr-3">
+                                <a href="{{ route('blank-page') }}" class="instagram mr-3">
                                     <i class="icon-instagram"></i>
                                 </a>Instagram
                                 <span class="float-right mt-2 font-weight-bold">5%</span>
