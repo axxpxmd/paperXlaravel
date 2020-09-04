@@ -24,6 +24,9 @@ Route::group(['middleware' => ['auth']], function () {
      */
     Route::get('blank-page', 'BlankPageController@index')->name('blank-page');
 
+    /**
+     * Master Roles
+     */
     Route::prefix('master-roles')->namespace('MasterRole')->name('master-role.')->group(function () {
         // Role
         Route::resource('role', 'RoleController');
