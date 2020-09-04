@@ -149,6 +149,7 @@
                 success : function(data) {
                     console.log(data);
                     $('#alert').html("<div role='alert' class='alert alert-success alert-dismissible'><button type='button' class='close' data-dismiss='alert' aria-label='Close'><span aria-hidden='true'>×</span></button><strong>Success!</strong> " + data.message + "</div>");
+                    location.reload();
                 },
                 error : function(data){
                     err = '';
