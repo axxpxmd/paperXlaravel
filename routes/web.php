@@ -50,7 +50,8 @@ Route::group(['middleware' => ['auth', 'role:super-admin']], function () {
     /**
      * Profil
      */
-    Route::prefix('profile')->namespace('Profile')->name('profile.')->group(function () {
+    Route::prefix('profile-pages')->namespace('Profile')->name('profile-page.')->group(function () {
         // Profile
+        Route::resource('profile', 'ProfilController');
     });
 });

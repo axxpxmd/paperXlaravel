@@ -14,6 +14,7 @@
 
 namespace App\Http\Controllers\MasterRole;
 
+use Auth;
 use DataTables;
 
 use Illuminate\Http\Request;
@@ -49,7 +50,7 @@ class PenggunaController extends Controller
 
     public function api()
     {
-        $pengguna = AdminDetails::all();
+        $pengguna = AdminDetails::whereNotIn('admin_id', [Auth::user()->id])->get();
 
         return DataTables::of($pengguna)
             ->addColumn('action', function ($p) {
