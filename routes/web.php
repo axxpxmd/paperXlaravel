@@ -54,4 +54,11 @@ Route::group(['middleware' => ['auth', 'role:super-admin']], function () {
         // Profile
         Route::resource('profile', 'ProfilController');
     });
+
+    /**
+     * Config Template
+     */
+    Route::prefix('config-templates')->name('ConfigTempalte')->name('config-template.')->group(function () {
+        // Template
+    });
 });

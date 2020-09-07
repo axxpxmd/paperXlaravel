@@ -7,7 +7,7 @@
         </a>
     </li>
     @can('master-template')
-    <li class="header light"><strong>MASTER TEMPLATE</strong></li>
+    <li class="header light"><strong>CONFIG TEMPLATE</strong></li>
     <li>
         <a href="{{ route('blank-page') }}">
             <i class="icon icon-settings2 red-text s-18"></i> 
