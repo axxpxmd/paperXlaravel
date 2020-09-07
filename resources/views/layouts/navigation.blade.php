@@ -9,7 +9,7 @@
     @can('master-template')
     <li class="header light"><strong>CONFIG TEMPLATE</strong></li>
     <li>
-        <a href="{{ route('blank-page') }}">
+        <a href="{{ route('config-template.template.index') }}">
             <i class="icon icon-settings2 red-text s-18"></i> 
             <span>Template</span>
         </a>

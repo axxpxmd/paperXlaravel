@@ -44,9 +44,7 @@ class PermissionController extends Controller
         $permission = Permission::all();
         return DataTables::of($permission)
             ->addColumn('action', function ($p) {
-                return "
-                    <a href='#' onclick='edit(" . $p->id . ")' title='Edit Permission'><i class='icon-pencil mr-1'></i></a>
-                    <a href='#' onclick='remove(" . $p->id . ")' class='text-danger' title='Hapus Permission'><i class='icon-remove'></i></a>";
+                return "<a href='#' onclick='edit(" . $p->id . ")' title='Edit Permission'><i class='icon-pencil mr-1'></i></a>";
             })
             ->addIndexColumn()
             ->rawColumns(['action'])

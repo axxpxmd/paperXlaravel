@@ -58,7 +58,9 @@ Route::group(['middleware' => ['auth', 'role:super-admin']], function () {
     /**
      * Config Template
      */
-    Route::prefix('config-templates')->name('ConfigTempalte')->name('config-template.')->group(function () {
+    Route::prefix('config-templates')->namespace('ConfigTemplate')->name('config-template.')->group(function () {
         // Template
+        Route::resource('template', 'TemplateController');
+        Route::post('template/api', 'TemplateController@api')->name('template.api');
     });
 });
