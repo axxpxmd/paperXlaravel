@@ -21,7 +21,11 @@
                     <div class="col-md-12">
                         <div class="card my-3">
                             <div class="card-body">
-                                test
+                                <div class="text-center">
+                                    <img class="mx-auto d-block rounded-circle" width="100" src="{{ asset('images/ava/' . Auth::user()->admin_detail[0]->foto) }}" alt="User Image">
+                                    <p class="mt-2 fs-20 text-uppercase font-weight-normal text-black" style="margin-bottom: 0px">{{ Auth::user()->admin_detail[0]->nama }}</p>
+                                    <span>{{ Auth::user()->role[0]->role->name }}</span>
+                                </div>
                             </div>
                         </div>
                     </div>

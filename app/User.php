@@ -8,6 +8,7 @@ use Spatie\Permission\Traits\HasRoles;
 
 // Model
 use App\Models\AdminDetails;
+use App\Models\ModelHasRoles;
 
 class User extends Authenticatable
 {
@@ -20,5 +21,10 @@ class User extends Authenticatable
     public function admin_detail()
     {
         return $this->hasMany(AdminDetails::class, 'admin_id', 'id');
+    }
+
+    public function role()
+    {
+        return $this->hasMany(ModelHasRoles::class, 'model_id', 'id');
     }
 }
