@@ -105,7 +105,7 @@
                                                 <label class="col-form-label s-12 col-md-2"></label>
                                                 <img width="150" class="rounded img-fluid mt-2" id="preview" alt=""/>
                                             </div>
-                                            <div class="mt-2 m-l-173">
+                                            <div class="mt-2" style="margin-left: 17%">
                                                 <button type="submit" class="btn btn-primary btn-sm" id="action"><i class="icon-save mr-2"></i>Simpan<span id="txtAction"></span></button>
                                                 <a class="btn btn-sm" onclick="add()" id="reset">Reset</a>
                                             </div>

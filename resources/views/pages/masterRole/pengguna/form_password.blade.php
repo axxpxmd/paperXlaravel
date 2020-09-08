@@ -7,7 +7,7 @@
             <div class="row">
                 <div class="col">
                     <h4>
-                        <i class="icon icon-settings2"></i>
+                        <i class="icon icon-users mr-2"></i>
                         Show {{ $title }} | {{ $admin_detail->nama }}
                     </h4>
                 </div>
@@ -45,7 +45,7 @@
                                             <label for="username" class="col-form-label s-12 col-md-2">Konfirmasi Password</label>
                                             <input type="password" name="confirm_password" id="confirm_password" class="form-control r-0 light s-12 col-md-6" autocomplete="off" required/>
                                         </div>
-                                        <div class="mt-1 m-l-173">
+                                        <div class="mt-1" style="margin-left: 17%">
                                             <button type="submit" class="btn btn-primary btn-sm"><i class="icon-save mr-2"></i>Simpan<span id="txtAction"></span></button>
                                         </div>
                                     </div>

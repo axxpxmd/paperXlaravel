@@ -57,7 +57,7 @@
                                     </div>
                                     @include('pages.configTemplate.input1')
                                     @include('pages.configTemplate.input2')                                                                          
-                                    <div class="mt-2 m-l-158">
+                                    <div class="mt-2" style="margin-left: 34%">
                                         <button type="submit" class="btn btn-primary btn-sm" id="action"><i class="icon-save mr-2"></i>Simpan<span id="txtAction"></span></button>
                                         <a class="btn btn-sm" onclick="add()" id="reset">Reset</a>
                                     </div>
@@ -211,13 +211,13 @@
         $.get("{{ route($route.'edit', ':id') }}".replace(':id', id), function(data){
             $('#id').val(data.id);
             var path = "{{$path}}"+data.logo;
-            $('#result').attr({'src': path, 'class': 'img-fluid m-l-240 mt-2 mb-2'});
+            $('#result').attr({'src': path, 'class': 'img-fluid mt-2 mb-2', 'style': 'margin-left: 40%'});
             $('#changeText').html('Change Image')
             var path1 =  "{{$path}}"+data.logo_title;
-            $('#result1').attr({'src': path1, 'class': 'img-fluid m-l-240 mt-2 mb-2'});
+            $('#result1').attr({'src': path1, 'class': 'img-fluid m-l-240 mt-2 mb-2', 'style': 'margin-left: 40%'});
             $('#changeText1').html('Change Image')
             var path2 =  "{{$path}}"+data.logo_auth;
-            $('#result2').attr({'src': path2, 'class': 'img-fluid m-l-240 mt-2 mb-2'});
+            $('#result2').attr({'src': path2, 'class': 'img-fluid m-l-240 mt-2 mb-2', 'style': 'margin-left: 40%'});
             $('#changeText2').html('Change Image')
         }, "JSON").fail(function(){
             reload();

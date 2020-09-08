@@ -51,7 +51,7 @@
                                         <label for="guard_name" class="col-form-label s-12 col-md-4">Guard Name</label>
                                         <input type="text" name="guard_name" id="guard_name" placeholder="" class="form-control r-0 light s-12 col-md-8" autocomplete="off" required/>
                                     </div>
-                                    <div class="mt-2 m-l-158">
+                                    <div class="mt-2" style="margin-left: 34%">
                                         <button type="submit" class="btn btn-primary btn-sm" id="action"><i class="icon-save mr-2"></i>Simpan<span id="txtAction"></span></button>
                                         <a class="btn btn-sm" onclick="add()" id="reset">Reset</a>
                                     </div>

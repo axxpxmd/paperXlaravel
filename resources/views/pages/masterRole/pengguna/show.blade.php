@@ -62,7 +62,7 @@
                                     <div class="row">
                                         <label class="col-md-2 text-right s-12"><strong>Foto :</strong></label>
                                         @if ($admin_detail->foto != null)
-                                        <img class="ml-2 m-t-7 rounded-circle" src="{{ asset($path.$admin_detail->foto) }}" width="100" alt="icon">
+                                        <img class="ml-2 m-t-7 rounded-circle" src="{{ asset('images/ava/'.$admin_detail->foto) }}" width="100" alt="icon">
                                         @else
                                         <img class="ml-2 m-t-7 rounded-circle" src="{{ asset('images/404.png') }}" width="100" alt="icon">
                                         @endif
