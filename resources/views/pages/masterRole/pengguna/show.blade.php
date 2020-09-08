@@ -64,7 +64,7 @@
                                         @if ($admin_detail->foto != null)
                                         <img class="ml-2 m-t-7 rounded-circle" src="{{ asset($path.$admin_detail->foto) }}" width="100" alt="icon">
                                         @else
-                                        <img class="ml-2 m-t-7 rounded-circle" src="{{ asset('images/boy.png') }}" width="100" alt="icon">
+                                        <img class="ml-2 m-t-7 rounded-circle" src="{{ asset('images/404.png') }}" width="100" alt="icon">
                                         @endif
                                     </div>
                                 </div>

@@ -49,7 +49,7 @@
                                     @if ($admin_detail->foto != null)
                                     <img width="150" src="{{ asset($path.$admin_detail->foto) }}" class="rounded img-fluid mt-2" alt=""/>
                                     @else
-                                    <img width="150" src="{{ asset('images/boy.png') }}" class="rounded img-fluid mt-2" alt=""/> 
+                                    <img width="150" src="{{ asset('images/404.png') }}" class="rounded img-fluid mt-2" alt=""/> 
                                     @endif
                                 </div>
                                 <div class="form-group m-0">

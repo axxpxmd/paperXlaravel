@@ -1,5 +1,17 @@
 <?php
 
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ * Description of welcome
+ *
+ * @author Asip Hamdi
+ * Github : axxpxmd
+ */
+
 namespace App\Http\Controllers\ConfigTemplate;
 
 use DataTables;
@@ -42,21 +54,21 @@ class TemplateController extends Controller
                 if ($p->logo != null) {
                     return "<img width='50' class='img-fluid mx-auto d-block ' alt='foto' src='" . $this->path . $p->logo . "'>";
                 } else {
-                    return "<img width='50' class='rounded img-fluid mx-auto d-block' alt='foto' src='" . asset('images/boy.png') . "'>";
+                    return "<img width='50' class='rounded img-fluid mx-auto d-block' alt='foto' src='" . asset('images/404.png') . "'>";
                 }
             })
             ->editColumn('logo_title',  function ($p) {
                 if ($p->logo_title != null) {
                     return "<img width='50' class='img-fluid mx-auto d-block ' alt='foto' src='" . $this->path . $p->logo_title . "'>";
                 } else {
-                    return "<img width='50' class='rounded img-fluid mx-auto d-block' alt='foto' src='" . asset('images/boy.png') . "'>";
+                    return "<img width='50' class='rounded img-fluid mx-auto d-block' alt='foto' src='" . asset('images/404.png') . "'>";
                 }
             })
             ->editColumn('logo_auth',  function ($p) {
                 if ($p->logo_auth != null) {
                     return "<img width='50' class='img-fluid mx-auto d-block ' alt='foto' src='" . $this->path . $p->logo_auth . "'>";
                 } else {
-                    return "<img width='50' class='rounded img-fluid mx-auto d-block' alt='foto' src='" . asset('images/boy.png') . "'>";
+                    return "<img width='50' class='rounded img-fluid mx-auto d-block' alt='foto' src='" . asset('images/404.png') . "'>";
                 }
             })
             ->addIndexColumn()
