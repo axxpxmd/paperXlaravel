@@ -6,6 +6,7 @@
             <span>Dashboard</span>
         </a>
     </li>
+    @can('master-template')
     <li class="header light"><strong>CONFIG TEMPLATE</strong></li>
     <li>
         <a href="{{ route('config-template.template.index') }}">
@@ -13,6 +14,8 @@
             <span>Template</span>
         </a>
     </li>
+    @endcan
+    @can('master-role')
     <li class="header light"><strong>MASTER ROLES</strong></li>
     <li>
         <a href="{{ route('master-role.role.index') }}">
@@ -32,4 +35,5 @@
             <span>Pengguna</span>
         </a>
     </li>
+    @endcan
 </ul>
