@@ -7,7 +7,7 @@
             <div class="row p-t-b-10 ">
                 <div class="col">
                     <h4>
-                        <i class="icon icon-settings2"></i>
+                        <i class="icon icon-paper-plane"></i>
                         List {{ $title }}
                     </h4>
                 </div>
@@ -22,11 +22,11 @@
                         <div class="table-responsive">
                             <table id="dataTable" class="table table-striped table-bordered" style="width:100%">
                                 <thead>
-                                    <th>No</th>
+                                    <th width="30">No</th>
                                     <th>Logo</th>
                                     <th>Logo Title</th>
                                     <th>Logo Auth</th>
-                                    <th></th>
+                                    <th width="60"></th>
                                 </thead>
                                 <tbody></tbody>
                             </table>
@@ -159,7 +159,6 @@
         $('#changeText1').html('Browse Image')
         $('#changeText2').html('Browse Image')
         $('#reset').show();
-        $('#n_app').focus();
     }
 
     add();

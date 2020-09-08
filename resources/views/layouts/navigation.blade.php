@@ -10,7 +10,7 @@
     <li class="header light"><strong>CONFIG TEMPLATE</strong></li>
     <li>
         <a href="{{ route('config-template.template.index') }}">
-            <i class="icon icon-settings2 red-text s-18"></i> 
+            <i class="icon icon-paper-plane red-text s-18"></i> 
             <span>Template</span>
         </a>
     </li>

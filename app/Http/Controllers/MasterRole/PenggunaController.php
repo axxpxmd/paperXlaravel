@@ -32,7 +32,7 @@ class PenggunaController extends Controller
     protected $route = 'master-role.pengguna.';
     protected $view  = 'pages.masterRole.pengguna.';
     protected $title = 'Config Pengguna';
-    protected $path  = '/images/ava/';
+    protected $path  = '../images/ava/';
 
     public function index()
     {
@@ -62,7 +62,7 @@ class PenggunaController extends Controller
             })
             ->editColumn('foto',  function ($p) {
                 if ($p->foto != null) {
-                    return "<img width='50' class='img-fluid mx-auto d-block rounded-circle' alt='foto' src='" . asset('images/ava/' . $p->foto) . "'>";
+                    return "<img width='50' class='img-fluid mx-auto d-block rounded-circle' alt='foto' src='" . $this->path . $p->foto . "'>";
                 } else {
                     return "<img width='50' class='rounded img-fluid mx-auto d-block' alt='foto' src='" . asset('images/boy.png') . "'>";
                 }
@@ -197,7 +197,7 @@ class PenggunaController extends Controller
             $fileName = time() . "." . $file->getClientOriginalName();
             $request->file('foto')->move("images/ava/", $fileName);
 
-            // Prose Delete Foto
+            // Proses Delete Foto
             $exist = $admin_detail->foto;
             $path  = "images/ava/" . $exist;
             \File::delete(public_path($path));
