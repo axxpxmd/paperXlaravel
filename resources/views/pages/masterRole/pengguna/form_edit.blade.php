@@ -47,7 +47,7 @@
                                 <div class="form-group m-0">
                                     <label class="col-form-label s-12 col-md-2"></label>
                                     @if ($admin_detail->foto != null)
-                                    <img width="150" src="{{ asset($path.$admin_detail->foto) }}" class="rounded img-fluid mt-2" alt=""/>
+                                    <img width="150" src="{{ asset('images/ava/'.$admin_detail->foto) }}" class="rounded img-fluid mt-2" alt=""/>
                                     @else
                                     <img width="150" src="{{ asset('images/404.png') }}" class="rounded img-fluid mt-2" alt=""/> 
                                     @endif
