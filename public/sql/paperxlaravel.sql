@@ -36,7 +36,7 @@ CREATE TABLE `admin_details`  (
 -- ----------------------------
 -- Records of admin_details
 -- ----------------------------
-INSERT INTO `admin_details` VALUES (1, 1, 'axxpxmd', 'asiphamdi13@gmail.com', '083897229273', '1599211118.boy.png', NULL, '2020-09-08 03:32:49');
+INSERT INTO `admin_details` VALUES (1, 1, 'paper', 'paperxlaravel@gmail.com', '000000000000', '1599211118.boy.png', NULL, '2020-09-08 03:32:49');
 
 -- ----------------------------
 -- Table structure for admins
@@ -54,7 +54,7 @@ CREATE TABLE `admins`  (
 -- ----------------------------
 -- Records of admins
 -- ----------------------------
-INSERT INTO `admins` VALUES (1, 'axxpxmd', '$2y$10$RSeHRkpomzjqmR5iWqTxW.6SYhhNOY0UriGZct4GCYpcCtDmJ2iUO', '0000-00-00 00:00:00', '2020-09-08 03:32:49');
+INSERT INTO `admins` VALUES (1, 'paper', '$2y$10$RSeHRkpomzjqmR5iWqTxW.6SYhhNOY0UriGZct4GCYpcCtDmJ2iUO', '0000-00-00 00:00:00', '2020-09-08 03:32:49');
 
 -- ----------------------------
 -- Table structure for template
