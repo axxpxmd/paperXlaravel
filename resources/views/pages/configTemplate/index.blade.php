@@ -8,62 +8,64 @@
                 <div class="col">
                     <h4>
                         <i class="icon icon-paper-plane mr-2"></i>
-                        List {{ $title }}
+                           List {{ $title }}
                     </h4>
                 </div>
             </div>
         </div>
     </header>
-    <div class="container-fluid my-3">
-        <div class="row">
-            <div class="col-md-8">
-                <div class="card no-b">
-                    <div class="card-body">
-                        <div class="table-responsive">
-                            <table id="dataTable" class="table table-striped table-bordered" style="width:100%">
-                                <thead>
-                                    <th width="30">No</th>
-                                    <th>Logo</th>
-                                    <th>Logo Title</th>
-                                    <th>Logo Auth</th>
-                                    <th width="60"></th>
-                                </thead>
-                                <tbody></tbody>
-                            </table>
+    <div class="container-fluid relative animatedParent animateOnce my-3">
+        <div class="tab-pane animated fadeInUpShort show active" id="semua-data" role="tabpanel">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="card no-b">
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table id="dataTable" class="table table-striped table-bordered" style="width:100%">
+                                    <thead>
+                                        <th width="30">No</th>
+                                        <th>Logo</th>
+                                        <th>Logo Title</th>
+                                        <th>Logo Auth</th>
+                                        <th width="60"></th>
+                                    </thead>
+                                    <tbody></tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div id="alert"></div>
-                <div class="card no-b">
-                    <div class="card-body">
-                        <form class="needs-validation" id="form" method="POST" enctype="multipart/form-data" novalidate>
-                            {{ method_field('POST') }}
-                            <input type="hidden" id="id" name="id"/>
-                            <h4 id="formTitle">Tambah Data</h4><hr>
-                            <div class="form-row form-inline">
-                                <div class="col-md-12">
-                                    <div class="form-group m-t-7">
-                                        <label for="" class="col-form-label s-12 col-md-4">Logo</label>
-                                        <input type="file" name="logo" id="file" class="input-file" onchange="tampilkanPreview(this,'preview')">
-                                        <label for="file" class="btn-tertiary js-labelFile col-md-8">
-                                            <i class="icon icon-image mr-2 m-b-1"></i>
-                                            <span id="changeText" class="js-fileName">Browse Image</span>
-                                        </label>
-                                        <img id="result" class="d-none" width="150">
-                                        <hr>
-                                        <img width="150" class="rounded img-fluid m-l-240 mt-1 mb-1" id="preview" alt=""/>
-                                    </div>
-                                    @include('pages.configTemplate.input1')
-                                    @include('pages.configTemplate.input2')                                                                          
-                                    <div class="mt-2" style="margin-left: 34%">
-                                        <button type="submit" class="btn btn-primary btn-sm" id="action"><i class="icon-save mr-2"></i>Simpan<span id="txtAction"></span></button>
-                                        <a class="btn btn-sm" onclick="add()" id="reset">Reset</a>
+                <div class="col-md-4">
+                    <div id="alert"></div>
+                    <div class="card no-b">
+                        <div class="card-body">
+                            <form class="needs-validation" id="form" method="POST" enctype="multipart/form-data" novalidate>
+                                {{ method_field('POST') }}
+                                <input type="hidden" id="id" name="id"/>
+                                <h4 id="formTitle">Tambah Data</h4><hr>
+                                <div class="form-row form-inline">
+                                    <div class="col-md-12">
+                                        <div class="form-group m-t-7">
+                                            <label for="" class="col-form-label s-12 col-md-4">Logo</label>
+                                            <input type="file" name="logo" id="file" class="input-file" onchange="tampilkanPreview(this,'preview')">
+                                            <label for="file" class="btn-tertiary js-labelFile col-md-8">
+                                                <i class="icon icon-image mr-2 m-b-1"></i>
+                                                <span id="changeText" class="js-fileName">Browse Image</span>
+                                            </label>
+                                            <img id="result" class="d-none" width="150">
+                                            <hr>
+                                            <img width="150" class="rounded img-fluid m-l-240 mt-1 mb-1" id="preview" alt=""/>
+                                        </div>
+                                        @include('pages.configTemplate.input1')
+                                        @include('pages.configTemplate.input2')                                                                          
+                                        <div class="mt-2" style="margin-left: 34%">
+                                            <button type="submit" class="btn btn-primary btn-sm" id="action"><i class="icon-save mr-2"></i>Simpan<span id="txtAction"></span></button>
+                                            <a class="btn btn-sm" onclick="add()" id="reset">Reset</a>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </form>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
