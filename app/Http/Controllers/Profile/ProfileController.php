@@ -18,6 +18,7 @@ use Auth;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Hash;
 
 // Models
 use App\User;
@@ -98,6 +99,40 @@ class ProfileController extends Controller
                 'no_telp' => $no_telp,
             ]);
         }
+
+        return response()->json([
+            'message' => 'Data ' . $this->title . ' berhasil diperbaharui.'
+        ]);
+    }
+
+    public function editPassword($id)
+    {
+        $route = $this->route;
+        $title = $this->title;
+
+        $admin_detail = AdminDetails::findOrFail($id);
+
+        return view($this->view . 'editPassword', compact(
+            'route',
+            'title',
+            'admin_detail'
+        ));
+    }
+
+    public function updatePassword(Request $request, $id)
+    {
+
+        $admin_detail = AdminDetails::find($id);
+        $request->validate([
+            'password'         => 'required|string|min:8',
+            'confirm_password' => 'required|same:password'
+        ]);
+
+        $password = $request->password;
+        $admin    = User::find($admin_detail->admin_id);
+        $admin->update([
+            'password' => Hash::make($password)
+        ]);
 
         return response()->json([
             'message' => 'Data ' . $this->title . ' berhasil diperbaharui.'
