@@ -51,7 +51,7 @@ $template = App\Models\Template::select('id', 'logo', 'logo_title')->first();
                     <div class="clearfix"></div>
                     <div class="collapse multi-collapse" id="userSettingsCollapse">
                         <div class="list-group mt-3 shadow">
-                            <a href="{{ route('master-role.pengguna.show', Auth::user()->admin_detail[0]->id) }}" class="list-group-item list-group-item-action ">
+                            <a href="{{ route('master-profile.profile.index') }}" class="list-group-item list-group-item-action ">
                                 <i class="mr-2 icon-user text-blue"></i>Profile
                             </a>
                             <a href="{{ route('blank-page') }}" class="list-group-item list-group-item-action">

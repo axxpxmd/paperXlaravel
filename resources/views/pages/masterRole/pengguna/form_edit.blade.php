@@ -1,4 +1,4 @@
-<div class="tab-pane fade" id="edit-data" role="tabpanel">
+<div class="tab-pane animated fadeInUpShort" id="edit-data" role="tabpanel">
     <div class="row">
         <div class="col-md-12">
             <div id="alert"></div>
@@ -54,9 +54,9 @@
                                 </div>
                                 <div class="form-group m-0">
                                     <label class="col-form-label s-12 col-md-2"></label>
-                                    <img width="150" class="rounded img-fluid mt-2" id="preview" alt=""/>
+                                    <img width="150" class="rounded img-fluid mt-2 mb-2" id="preview" alt=""/>
                                 </div>
-                                <div style="margin-left: 17%; margin-top: -10px">
+                                <div style="margin-left: 17%">
                                     <button type="submit" class="btn btn-primary btn-sm" id="action"><i class="icon-save mr-2"></i>Simpan<span id="txtAction"></span></button>
                                 </div>
                             </div>

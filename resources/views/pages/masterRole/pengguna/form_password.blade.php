@@ -24,33 +24,35 @@
             </div>
         </div>
     </header>
-    <div class="container-fluid">
+    <div class="container-fluid relative animatedParent animateOnce">
         <div class="tab-content my-3" id="pills-tabContent">
-            <div class="row">
-                <div class="col-md-12">
-                    <div id="alert"></div>
-                    <div class="card">
-                        <div class="card-body">
-                            <form class="needs-validation" id="form" method="PATCH"  enctype="multipart/form-data" novalidate>
-                                {{ method_field('POST') }}
-                                <input type="hidden" id="id_admin" name="id" value="{{ $admin_detail->id }}"/>
-                                <h4>Ganti Password</h4><hr>
-                                <div class="form-row form-inline">
-                                    <div class="col-md-8">
-                                        <div class="form-group m-0">
-                                            <label for="username" class="col-form-label s-12 col-md-2">Password</label>
-                                            <input type="password" name="password" id="password" class="form-control r-0 light s-12 col-md-6" autocomplete="off" required/>
-                                        </div>
-                                        <div class="form-group m-0">
-                                            <label for="username" class="col-form-label s-12 col-md-2">Konfirmasi Password</label>
-                                            <input type="password" name="confirm_password" id="confirm_password" class="form-control r-0 light s-12 col-md-6" autocomplete="off" required/>
-                                        </div>
-                                        <div class="mt-1" style="margin-left: 17%">
-                                            <button type="submit" class="btn btn-primary btn-sm"><i class="icon-save mr-2"></i>Simpan<span id="txtAction"></span></button>
+            <div class="tab-pane animated fadeInUpShort show active">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="alert"></div>
+                        <div class="card">
+                            <div class="card-body">
+                                <form class="needs-validation" id="form" method="PATCH"  enctype="multipart/form-data" novalidate>
+                                    {{ method_field('POST') }}
+                                    <input type="hidden" id="id_admin" name="id" value="{{ $admin_detail->id }}"/>
+                                    <h4>Ganti Password</h4><hr>
+                                    <div class="form-row form-inline">
+                                        <div class="col-md-8">
+                                            <div class="form-group m-0">
+                                                <label for="username" class="col-form-label s-12 col-md-2">Password</label>
+                                                <input type="password" name="password" id="password" class="form-control r-0 light s-12 col-md-6" autocomplete="off" required/>
+                                            </div>
+                                            <div class="form-group m-0">
+                                                <label for="username" class="col-form-label s-12 col-md-2">Konfirmasi Password</label>
+                                                <input type="password" name="confirm_password" id="confirm_password" class="form-control r-0 light s-12 col-md-6" autocomplete="off" required/>
+                                            </div>
+                                            <div class="mt-1" style="margin-left: 17%">
+                                                <button type="submit" class="btn btn-primary btn-sm"><i class="icon-save mr-2"></i>Simpan<span id="txtAction"></span></button>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </form>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>

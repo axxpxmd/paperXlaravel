@@ -30,9 +30,9 @@
             </div>
         </div>
     </header>
-    <div class="container-fluid">
+    <div class="container-fluid relative animatedParent animateOnce">
         <div class="tab-content my-3" id="pills-tabContent">
-            <div class="tab-pane fade show active" id="semua-data" role="tabpanel">
+            <div class="tab-pane animated fadeInUpShort show active" id="semua-data" role="tabpanel">
                 <div class="row">
                     <div class="col-md-12">
                         <div class="card">

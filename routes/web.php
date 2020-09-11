@@ -55,4 +55,12 @@ Route::group(['middleware' => ['auth', 'role:super-admin']], function () {
         Route::resource('template', 'TemplateController');
         Route::post('template/api', 'TemplateController@api')->name('template.api');
     });
+
+    /**
+     * Profile
+     */
+    Route::prefix('profile')->namespace('Profile')->name('master-profile.')->group(function () {
+        // Profile
+        Route::resource('profile', 'ProfileController');
+    });
 });
