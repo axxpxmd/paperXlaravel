@@ -49,7 +49,7 @@ class ProfileController extends Controller
         $admin_detail = AdminDetails::find($id);
         $request->validate([
             'username' => 'required',
-            'nama' => 'required',
+            'nama'     => 'required',
             'email'    => 'required|email|unique:admin_details,email,' . $id,
             'no_telp'  => 'required|max:13|unique:admin_details,no_telp,' . $id,
         ]);

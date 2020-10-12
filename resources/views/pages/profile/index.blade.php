@@ -83,7 +83,12 @@
                                                 <input type="text" name="no_telp" id="no_telp" class="form-control r-0 light s-12 col-md-6" value="{{ $user->no_telp }}" autocomplete="off" required/>
                                             </div>
                                             <div class="form-group m-0">
-                                                <label for="" class="col-form-label s-12 col-md-2">Foto</label>
+                                                <label for="" class="col-form-label s-12 col-md-2">
+                                                    Foto
+                                                    <a class="ml-1 mt-1" data-toggle="popover" title="Required" data-html="true" data-content="Max File : 1MB<br/>Format File : (png, jpg, jpeg)">
+                                                        <i class="icon icon-information2 s-18 red-text"></i>
+                                                    </a>
+                                                </label>
                                                 <input type="file" name="foto" id="file" class="input-file" onchange="tampilkanPreview(this,'preview')">
                                                 <label for="file" class="btn-tertiary js-labelFile col-md-6">
                                                     <i class="icon icon-image mr-2 m-b-1"></i>
