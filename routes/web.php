@@ -54,6 +54,8 @@ Route::group(['middleware' => ['auth', 'role:super-admin']], function () {
         // Template
         Route::resource('template', 'TemplateController');
         Route::post('template/api', 'TemplateController@api')->name('template.api');
+        // Icon
+        Route::get('icon', 'TemplateController@icon')->name('icon');
     });
 
     /**

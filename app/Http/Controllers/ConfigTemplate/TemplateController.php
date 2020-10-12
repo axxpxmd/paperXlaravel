@@ -172,4 +172,11 @@ class TemplateController extends Controller
     {
         // 
     }
+
+    public function icon()
+    {
+        $title = 'Icon Paper';
+
+        return view($this->view . 'icon', compact('title'));
+    }
 }

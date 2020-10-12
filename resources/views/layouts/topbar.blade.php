@@ -139,6 +139,10 @@
                                         <i class="icon-user amber-text lighten-2 avatar r-5"></i>
                                         <div class="pt-1">Profil</div>
                                     </a>
+                                    <a href="{{ route('config-template.icon') }}">
+                                        <i class="icon-view_list text-danger lighten-2 avatar r-5"></i>
+                                        <div class="pt-1">List Icon</div>
+                                    </a>
                                 </div>
                                 <div class="col">
                                     <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" class="list-group-item list-group-item-action mt-2"><i class="mr-2 icon-power-off text-danger"></i>Logout</a>
