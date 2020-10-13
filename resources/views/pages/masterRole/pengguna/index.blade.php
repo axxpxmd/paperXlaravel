@@ -93,7 +93,7 @@
                                                 <label for="no_telp" class="col-form-label s-12 col-md-2">No Telp</label>
                                                 <input type="text" name="no_telp" id="no_telp" class="form-control r-0 light s-12 col-md-6" autocomplete="off" required/>
                                             </div>
-                                            <div class="form-group m-0">
+                                            <div class="form-group" style="margin-top: -2px">
                                                 <label for="" class="col-form-label s-12 col-md-2">
                                                     Foto
                                                     <a class="ml-1 mt-1" data-toggle="popover" title="Required" data-html="true" data-content="Max File : 1MB<br/>Format File : (png, jpg, jpeg)">
