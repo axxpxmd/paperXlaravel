@@ -27,7 +27,7 @@ $template = App\Models\Template::select('id', 'logo', 'logo_title', 'logo_auth')
         <div class="wrap-contact100 mt-n5">
             <form method="POST" action="{{ route('login') }}" autocomplete="off" class="needs-validation" novalidate>
                 @csrf
-                <img class="mx-auto d-block mb-3" src="{{ asset('images/tangsel.png') }}" width="100">
+                <img class="mx-auto d-block mb-3" src="{{ asset('images/logo/'.$template->logo) }}" width="100">
                 <p class="text-center fs-22">
                     Selamat Datang
                 </p>

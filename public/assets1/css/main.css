@@ -145,7 +145,7 @@ iframe {
 /*//////////////////////////////////////////////////////////////////
 [ Contact ]*/
 
-.container-contact100 {
+/* .container-contact100 {
   width: 100%;  
   min-height: 100vh;
   display: -webkit-box;
@@ -162,7 +162,43 @@ iframe {
   background: -o-linear-gradient(45deg, #00dbde, #0E5FB4);
   background: -moz-linear-gradient(45deg, #00dbde, #0E5FB4);
   background: linear-gradient(45deg, #00dbde, #0E5FB4);
+  animation: container-contact100 12s ease infinite;
   
+} */
+
+.container-contact100 {
+  width: 100%;  
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background: #3AD1D2;
+  background: linear-gradient(45deg, #00dbde, #277fdd, #26a65b, #D79F43);
+  background-size: 500% 500%;
+  -webkit-animation: container-contact100 12s ease infinite;
+  -moz-animation: container-contact100 12s ease infinite;
+  animation: container-contact100 20s ease infinite;
+}
+@-webkit-keyframes container-contact100 {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-moz-keyframes container-contact100 {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@keyframes container-contact100 {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
 }
 
 .wrap-contact100 {
