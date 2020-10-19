@@ -59,6 +59,7 @@ Route::group(['middleware' => ['auth']], function () {
             Route::get('icon', 'TemplateController@icon')->name('icon');
         });
     });
+    
     /**
      * Profile
      */
