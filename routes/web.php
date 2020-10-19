@@ -65,7 +65,7 @@ Route::group(['middleware' => ['auth']], function () {
     Route::prefix('profile')->namespace('Profile')->name('master-profile.')->group(function () {
         // Profile
         Route::resource('profile', 'ProfileController');
-        Route::get('profile/{id}/edtiPasswrod', 'ProfileController@editPassword')->name('profile.editPassword');
+        Route::get('profile/{id}/editPasswrod', 'ProfileController@editPassword')->name('profile.editPassword');
         Route::post('profile/{id}/updatePassword', 'ProfileController@updatePassword')->name('profile.updatePassword');
     });
 });
