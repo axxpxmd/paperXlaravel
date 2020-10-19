@@ -20,7 +20,8 @@
                 <div class="text-center p-5">
                     <i class="icon-note-important s-64 text-primary"></i>
                     <h4 class="my-3">oops!</h4>
-                    <p>Something went wrong. The page you are looking for is gone</p>
+                    <p>Page is currently undergoing scheduled maintenance</p>
+                    <p style="margin-top: -20px !important">We are should be back shortly. Thank you for your patience</p>
                     <a href="{{ route('home') }}">
                         <button class="btn btn-outline-primary" type="button">
                             <i class="icon icon-arrow_back"></i>

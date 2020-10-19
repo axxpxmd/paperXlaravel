@@ -17,50 +17,48 @@ Auth::routes();
 
 Route::get('/', 'HomeController@index')->name('home');
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/test', function () {
-    return view('auth.login1');
-});
 
-Route::group(['middleware' => ['auth', 'role:super-admin']], function () {
-    /**
-     * Page Not Found
-     */
-    Route::get('blank-page', 'BlankPageController@index')->name('blank-page');
+Route::group(['middleware' => ['auth']], function () {
+    Route::group(['middleware' => ['role:super-admin']], function () {
+        /**
+         * Page Not Found
+         */
+        Route::get('blank-page', 'BlankPageController@index')->name('blank-page');
 
-    /**
-     * Master Roles
-     */
-    Route::prefix('master-roles')->namespace('MasterRole')->name('master-role.')->group(function () {
-        // Role
-        Route::resource('role', 'RoleController');
-        Route::prefix('role')->name('role.')->group(function () {
-            Route::post('api', 'RoleController@api')->name('api');
-            Route::get('{id}/addPermissions', 'RoleController@permission')->name('addPermissions');
-            Route::post('storePermissions', 'RoleController@storePermission')->name('storePermissions');
-            Route::get('{id}/getPermissions', 'RoleController@getPermissions')->name('getPermissions');
-            Route::delete('{name}/destroyPermission', 'RoleController@destroyPermission')->name('destroyPermission');
+        /**
+         * Master Roles
+         */
+        Route::prefix('master-roles')->namespace('MasterRole')->name('master-role.')->group(function () {
+            // Role
+            Route::resource('role', 'RoleController');
+            Route::prefix('role')->name('role.')->group(function () {
+                Route::post('api', 'RoleController@api')->name('api');
+                Route::get('{id}/addPermissions', 'RoleController@permission')->name('addPermissions');
+                Route::post('storePermissions', 'RoleController@storePermission')->name('storePermissions');
+                Route::get('{id}/getPermissions', 'RoleController@getPermissions')->name('getPermissions');
+                Route::delete('{name}/destroyPermission', 'RoleController@destroyPermission')->name('destroyPermission');
+            });
+            // Permission
+            Route::resource('permission', 'PermissionController');
+            Route::post('permission/api', 'PermissionController@api')->name('permission.api');
+            // Pegawai
+            Route::resource('pengguna', 'PenggunaController');
+            Route::post('pengguna/api', 'PenggunaController@api')->name('pengguna.api');
+            Route::get('pengguna/{id}/editPassword', 'PenggunaController@editPassword')->name('pengguna.editPassword');
+            Route::post('pengguna/{id}/updatePassword', 'PenggunaController@updatePassword')->name('pengguna.updatePassword');
         });
-        // Permission
-        Route::resource('permission', 'PermissionController');
-        Route::post('permission/api', 'PermissionController@api')->name('permission.api');
-        // Pegawai
-        Route::resource('pengguna', 'PenggunaController');
-        Route::post('pengguna/api', 'PenggunaController@api')->name('pengguna.api');
-        Route::get('pengguna/{id}/editPassword', 'PenggunaController@editPassword')->name('pengguna.editPassword');
-        Route::post('pengguna/{id}/updatePassword', 'PenggunaController@updatePassword')->name('pengguna.updatePassword');
-    });
 
-    /**
-     * Config Template
-     */
-    Route::prefix('config-templates')->namespace('ConfigTemplate')->name('config-template.')->group(function () {
-        // Template
-        Route::resource('template', 'TemplateController');
-        Route::post('template/api', 'TemplateController@api')->name('template.api');
-        // Icon
-        Route::get('icon', 'TemplateController@icon')->name('icon');
+        /**
+         * Config Template
+         */
+        Route::prefix('config-templates')->namespace('ConfigTemplate')->name('config-template.')->group(function () {
+            // Template
+            Route::resource('template', 'TemplateController');
+            Route::post('template/api', 'TemplateController@api')->name('template.api');
+            // Icon
+            Route::get('icon', 'TemplateController@icon')->name('icon');
+        });
     });
-
     /**
      * Profile
      */
